@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body ng-app="broadcast">
+
+    <div class="" ng-controller="MainController">
+      
+      <article class="" ng-repeat="item in items">
+        <h2>{{item.title}}</h2>
+        <p>
+          {{item.price}}
+        </p>
+      </article>
+
+
+
+      <div class="">
+        <input type="text" name="title" ng-model="newItem.title">
+        <input type="text" name="price" ng-model="newItem.price">
+        <button type="button" ng-click="addItem(newItem)" name="button">add</button>
+      </div>
+
+
+
+    </div>
+
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
